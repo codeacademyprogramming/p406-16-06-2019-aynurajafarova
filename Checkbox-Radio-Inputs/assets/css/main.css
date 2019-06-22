@@ -1,0 +1,118 @@
+body{
+    font-family: sans-serif;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    margin: 0 0 15px;
+}
+
+fieldset h1{
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* radio */
+.custom-radio{
+    margin: 30px 30px 0px;
+    background-color: cornsilk;
+    padding: 40px;
+}
+
+.custom-radio input[type="radio"]{
+    position: absolute;
+    left: -9999px;
+
+}
+
+.custom-radio input[type="radio"] + label{
+    position: relative;
+    padding: 3px 0 0 40px;
+    cursor: pointer;
+}
+
+.custom-radio input[type="radio"] + label::before{
+    content: "";
+    background-color: #fff;
+    border: 2px solid #939496;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 12px;
+}
+
+.custom-radio input[type="radio"] + label::after{
+    content: "";
+    background-color: #37B280;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    position: absolute;
+    top: 7px;
+    left: 17px;
+    opacity: 0;
+}
+
+.custom-radio input[type="radio"]:checked + label::after{
+    opacity: 1;
+}
+
+.custom-radio input[type="radio"]:checked + label::before{
+    border: 2px solid #37B280;
+}
+
+
+/* checkbox */
+
+.custom-checkbox{
+    margin: 30px 30px 0px;
+    background-color: beige;
+    padding: 30px;
+}
+
+.custom-checkbox input[type="checkbox"]{
+    position: absolute;
+    left: -9999px;
+}
+
+.custom-checkbox input[type="checkbox"] + label{
+    position: relative;
+    padding: 3px 0 0 40px;
+    cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"] + label::before{
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    border: 2px solid #939496;
+    height: 12px;
+    width: 12px;
+    left: 12px;
+    top: 4px;
+}
+
+.custom-checkbox input[type="checkbox"] + label::after{
+    content: "";
+    position: absolute;
+    background-color: #37B280;
+    height: 8px;
+    width: 8px;
+    top: 8px;
+    left: 16px;
+    opacity: 0;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label::after{
+    opacity: 1;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + label::before{
+    border: 2px solid #37B280;
+}

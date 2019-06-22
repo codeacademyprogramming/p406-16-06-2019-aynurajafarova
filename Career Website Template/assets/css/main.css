@@ -1,0 +1,569 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* COMMON */
+a{
+    text-decoration: none;
+}
+.wrapper{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.text-white{
+    color: white;
+}
+
+.text-lightgray{
+	color: #999D9F;
+}
+
+.text-lightgray-2{
+	color: #7F848C;
+}
+
+.text-gray{
+	color: #343a40;
+}
+
+.text-blue{
+	color: #1644ba;
+}
+
+.text-black{
+	color: black;
+}
+
+body{
+	line-height: 1.7;
+	font-family: 'Nunito', sans-serif;
+}
+
+.background-blue{
+	background-color:#1644ba;
+}
+
+.background-yellow{
+	background-color:#fff568;
+}
+
+.background-green{
+	background-color: #28a745;
+}
+
+
+/* HEADER */
+header{
+	height: 50px;
+	position: absolute;
+    top: 35px;
+    z-index: 1;
+}
+
+.logo{
+	font-size: 1.5em;
+    text-transform: uppercase;
+	margin-left: 90px;
+	letter-spacing: 3px;
+}
+
+.navigation-bar{
+    margin-left: 175px;
+}
+
+.navigation-bar ul li a{
+   padding-left: 45px;
+   color: #999D9F 
+}
+
+.navigation-bar ul li:first-child a{
+	color: white!important;
+}
+
+.navigation-bar ul li a:hover{
+	color: #fff;
+}
+
+.contact-us-btn{
+    width: 110px;
+	padding: 7px;
+	position: absolute;
+	left: 1140px;
+	border-radius: 5px;
+}
+
+.fa-telegram-plane{
+	padding-right: 3px;
+    font-size: 1.3em;
+}
+
+/* A Powerful Career Website Template */
+.powerfull-career-cover{
+	background-size: cover;
+	background-position: center;
+	height: 800px;
+	position: relative;
+}
+
+.powerfull-career-cover:before{
+	content: "";
+	position: absolute;
+	background: rgba(0, 0, 0, 0.5);	
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.powerful-career{
+	position: absolute;
+    top: 280px;
+    left: 110px;
+}
+
+.powerful-career h1{
+	font-size: 3em;
+    font-weight: 700;
+}
+
+.powerful-career p{
+	font-size: 1.2em;
+}
+
+.search-job-form{
+	margin-top: 40px;
+}
+
+.search-job-form input{
+	height: 39px;
+}
+
+.search-job-btn, .search-job-form select{
+    height: 49px;
+}
+
+.search-job-btn, .search-job-form input,select{
+	font-size: 1em;
+	width: 255px;
+	padding: 5px;
+	border: transparent;
+	margin: 10px;
+	cursor: pointer;
+	outline: none;
+	border-radius: 6px;
+}
+
+.fa-search{
+	padding: 5px;
+}
+
+/* Careers Statistics */
+.careers-statistics-cover{
+	height: 390px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.careers-statistics-cover:before{
+	content: "";
+	position: absolute;
+	background: rgba(22, 68, 186, 0.9);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.careers-statistics{
+	width: 45%;
+    text-align: center;
+    position: absolute;
+    z-index: 2;
+    top: 40px;
+	left: 360px;
+	color: #fff;
+}
+
+.careers-statistics h2{
+	font-size: 2em;
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+.careers-statistics p{
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+.counter-list{
+	z-index: 2;
+	position: absolute;
+	top: 230px;
+	left: 30px;
+}
+
+.counter-list-item{
+	margin-left: 160px;
+	text-align: center;
+}
+
+.counter-list-item-number{
+	font-weight: 800;
+	font-size: 3.5em;
+	color: #fff;
+}
+
+.counter-list-item p{
+	color: rgba(255, 255, 255, 0.7);
+}
+
+/* 109,234 Job Listed */
+.job-listed{
+	border-bottom: 1px solid #dee2e6;
+}
+
+.job-listed-content>h2{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 700;
+	margin: 85px 60px 60px;
+}
+
+.job-item{
+	height: 100px;
+	border-bottom: 1px solid #dee2e6;
+    margin: 10px 0px;
+    padding: 20px 0px;
+}
+
+.job-img img{
+	width: 60px;
+	margin-left: 15px;
+}
+
+.job-name span{
+	font-size: 0.8em;
+    border-radius: 4px;
+	padding: 1px 6px;
+	width: 13%;
+    text-align: center;
+}
+
+.job-name h2{
+	font-size: 1.2em;
+	margin-top: 12px;
+}
+
+.job-name h2 a{
+	color: #1644ba;
+}
+
+.job-name h2 a:hover{
+	text-decoration: underline;
+	color: #3c3c3c;
+}
+
+.job-publisher, .job-location span{
+	color: #b5b5b5;
+}
+
+.job-publisher strong{
+	font-weight: 700;
+    color: #3c3c3c;
+}
+
+.job-location h3{
+	font-size: 1.2em;
+}
+
+.job-salary p{
+	font-weight: 700;
+	margin-right: -45px;
+}
+
+.pagination{
+	margin: 35px 20px 66px;
+}
+
+.previous, .next{
+	border: 1px solid #dee2e6;
+    padding: 0px 10px;
+    border-radius: 4px;
+    margin-top: 8px;
+	height: 28px;
+	color: #1644ba;
+}
+
+.pagination-count{
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	text-align: center;
+	border: 1px solid #dee2e6;
+	color: #1644ba;
+    margin: 7px;
+}
+
+.pagination-count:hover{
+	color: #fff;
+	background-color: #1644ba;
+}
+
+.previous:hover{
+	color: #fff;
+	background-color: #1644ba;
+}
+
+.next:hover{
+	color: #fff;
+	background-color: #1644ba;
+}
+
+.active{
+	color: #fff!important;
+	background-color: #1644ba!important;
+}
+
+/*Our Candidates Work In Company*/
+.our-candidates-text{
+	margin: 30px 0px;
+	text-align: center;
+}
+
+.our-candidates-text h2{
+	font-size: 2em;
+	font-weight: 700;
+}
+
+.our-candidates-text p{
+	font-size: 1.2em;
+	font-weight: 300;
+	color: #7f848c;
+	width: 53%;
+}
+
+.companies{
+	margin: 60px 0px;
+}
+
+.company{
+	height: 125px;
+}
+
+.mailchimp-img{
+	width: 220px;
+}
+
+.paypal-img{
+	width: 165px;
+}
+
+.stripe-img{
+	width: 120px;
+}
+
+.visa-img{
+	width: 100px;
+}
+
+/* OUR TEAM */
+.our-team{
+	padding:75px 0px 50px;
+	background-color: #F8F9FA;
+}
+
+.our-team-list img{
+	width: 110px;
+	border-radius: 100%;
+}
+
+.our-team-list blockquote{
+	width: 40%;
+	text-align: center;
+	font-style: italic;
+	margin:35px 0px;
+}
+
+.our-team-list blockquote p{
+    font-size: 1.3em;
+    font-weight: 300;
+	color: #7f848c;
+	margin-bottom: 15px;
+}
+
+.our-team-list blockquote span{
+	font-size: 1.2em;
+}
+
+.dots button{
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	outline: none;
+	padding: 4px;
+}
+
+.fa-circle{
+	font-size: 0.7em;
+}
+
+/* LOOKING FOR A JOB */
+.looking-job-cover{
+	height: 170px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.looking-job-cover:before{
+	content: "";
+	position: absolute;
+	background: rgba(22, 68, 186, 0.9);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.looking-job-text{
+	z-index: 2;
+	position: absolute;
+	left: 110px;
+    top: 40px;
+}
+
+.looking-job-text h2{
+	font-size: 2em;
+	font-weight: 600;
+}
+
+.looking-job-text p{
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+.looking-job-text h2, .looking-job-text p{
+	color: #fff;
+}
+
+.sign-up-btn{
+	position: absolute;
+    z-index: 2;
+    width: 250px;
+	padding: 8px 0px;
+    border: transparent;
+	text-align: center;
+	border-radius: 4px;
+	right: 100px;
+	top: 60px;
+	cursor: pointer;
+}
+
+.sign-up-btn a{
+	font-size: 1.2em;
+	color: #000000;
+}
+
+.sign-up-btn:hover{
+	background-color: #FFF600;
+}
+
+/* FOOTER */
+footer{
+	background-color:#242424;
+	padding: 110px 0px;
+}
+
+.footer-item h3{
+	margin-bottom: 15px;
+	color: #fff;
+}
+
+.footer-item ul li{
+	margin-bottom: 10px;
+}
+
+.footer-item ul li a, .copyright a{
+	color: #999D9F;
+}
+
+.footer-item ul li a:hover{
+	color: white;
+	text-decoration: underline;
+}
+
+.footer-social a{
+	width: 22px;
+    height: 22px;
+    border: transparent;
+    padding: 8px;
+    text-align: center;
+	border-radius: 100%;
+	margin-right: 5px;
+	background-color: #1644ba;
+	color: #fff;
+}
+
+.footer-social a:hover{
+	background-color: #fff;
+	color: #1644ba;
+}
+
+.copyright{
+	margin-top: 35px;
+	color: #7F848C;
+}
+
+.copyright a:hover{
+	color: #fff;
+	text-decoration: underline;
+}
